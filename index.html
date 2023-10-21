@@ -1,25 +1,26 @@
 <!doctype html> 
 <html lang="en">
+    <link rel="stylesheet" href="style.css">
 <head> 
     <meta charset="UTF-8"
 </head>
 
-<div style="text-align: center;"
->************************************************************ <br>
+<div> <h1>
+************************************************************ <br>
                              Zach's Matchmaker 1.0 <br> <br>
                              
                              Assisting you in discovering romantic connections <br> <br>
-                                  Zacharysoft INC <br> <br>
+                                  Zacharysoft INC <br>
     ************************************************************ <br>
-                    
-</p>   </div>
+         </h1>           
+</div>
 <body> 
 
-<div style="text-align: center;"   
+<h2>Instructions</h2>
 
-<p> This program will determine if you and I are matches.
-     <br> The following is how to answer each question: 
-    <br> Select strongly agree, agree, neither agree nor disagree, or disagree
+<p style="text-align: center;"> This program will determine if you and I are matches.<br>
+     <br> The following is how to answer each question: <br>
+    <br> <b>Select strongly agree, agree, neither agree nor disagree, disagree, or strongly disagree</b>
     <br> 
    </p>
 </div>
@@ -32,6 +33,8 @@
 <!-- Reference for HTML "option" tabs/fields: https://www.w3schools.com/tags/tag_option.asp-->
 <label>Chicago Bears might go 12-5: </label>
 <select id="q1">
+    
+
 <option value="5">Strongly Agree</option>
 <option value="4">Agree</option>
 <option value="3">Neither Agree nor Disagree</option>
@@ -44,6 +47,8 @@
    </p> 
 <label>Ford is a good car company: </label>
 <select id="q2">
+    
+    
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neither Agree nor Disagree</option>
@@ -55,6 +60,7 @@
    </p> 
 <label>Country music is better then Pop music: </label>
 <select id="q3">
+    
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neither Agree nor Disagree</option>
@@ -66,6 +72,7 @@
    </p> 
 <label>Cybersecurity is good to major in: </label>
 <select id="q4">
+    
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neither Agree nor Disagree</option>
@@ -77,6 +84,7 @@
    </p> 
    <label>Luis Robert is better then Mike Trout: </label>
 <select id="q5">
+    
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neither Agree nor Disagree</option>
@@ -87,13 +95,20 @@
 
 <br /><br  />
 <button onclick="calculateCompatibility()">Calculate Compatibility</button>
-<p id="compatibility"></p>
+<button onclick="resetPage()">Reset Page</button>
 
+
+<p id="compatibility"></p>
 <p id="comp"></p>
 
 
 <script>
 console.log("Starting Matchmaker Lite");
+
+function resetPage() {
+   location.reload();
+
+}
 
 function calculateCompatibility() {
      console.log("calculateCompatibility");
