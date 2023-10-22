@@ -1,222 +1,271 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
-    <link rel="stylesheet" href="style.css">
-<head> 
-    <meta charset="UTF-8"
-</head>
+<link rel="stylesheet" href="style.css">
 
-<div> <h1>
-************************************************************ <br>
-                             Zach's Matchmaker 1.0 <br> <br>
-                             
-                             Assisting you in discovering romantic connections <br> <br>
-                                  Zacharysoft INC <br>
-    ************************************************************ <br>
-         </h1>           
-</div>
-<body> 
+<head>
+    <meta charset="UTF-8" </head>
 
-<h2>Instructions</h2>
+    <div>
+        <h1>
+            ************************************************************ <br>
+            Zach's Matchmaker 1.0 <br> <br>
 
-<p style="text-align: center;"> This program will determine if you and I are matches.<br>
-     <br> The following is how to answer each question: <br>
-    <br> <b>Select strongly agree, agree, neither agree nor disagree, disagree, or strongly disagree</b>
-    <br> 
-   </p>
-</div>
-   
-   
+            Assisting you in discovering romantic connections <br> <br>
+            Zacharysoft INC <br>
+            ************************************************************ <br>
+        </h1>
+    </div>
+
+<body>
+
+    <h2>Instructions</h2>
+
+    <p style="text-align: center;"> This program will determine if you and I are matches.<br>
+        <br> The following is how to answer each question: <br>
+        <br> <b>Select strongly agree, agree, neither agree nor disagree, disagree, or strongly disagree</b>
+        <br>
+    </p>
+    </div>
+
+
     <p>Question 1<br>
-     _ _ _ _ _ _ _ _ 
-    </p> 
+        _ _ _ _ _ _ _ _
+    </p>
 
-<!-- Reference for HTML "option" tabs/fields: https://www.w3schools.com/tags/tag_option.asp-->
-<label>Chicago Bears might go 12-5: </label>
-<select id="q1">
-    
+    <!-- Reference for HTML "option" tabs/fields: https://www.w3schools.com/tags/tag_option.asp-->
 
-<option value="5">Strongly Agree</option>
-<option value="4">Agree</option>
-<option value="3">Neither Agree nor Disagree</option>
-<option value="2">Disagree</option>
-<option value="1">Strongly Disagree</option>
-</select>
-<br/>
-<p>Question 2<br>
-    _ _ _ _ _ _ _ _ 
-   </p> 
-<label>Ford is a good car company: </label>
-<select id="q2">
-    
-    
-    <option value="5">Strongly Agree</option>
-    <option value="4">Agree</option>
-    <option value="3">Neither Agree nor Disagree</option>
-    <option value="2">Disagree</option>
-    <option value="1">Strongly Disagree</option>
+    <!-- REQ 2.1 Asks 5 questions, each possible answer is 1-5 based on selected what your preference is, added a blank option for each to verifiy that the person is se
+    selecting a new choice, unless all choices are completed, an error will occur instructing the user to enter a choice for each questions -->
+
+    <label>Chicago Bears might go 12-5: </label>
+    <select id="q1">
+
+        <option></option>
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
     </select>
-<p>Question 3<br>
-    _ _ _ _ _ _ _ _ 
-   </p> 
-<label>Country music is better then Pop music: </label>
-<select id="q3">
-    
-    <option value="5">Strongly Agree</option>
-    <option value="4">Agree</option>
-    <option value="3">Neither Agree nor Disagree</option>
-    <option value="2">Disagree</option>
-    <option value="1">Strongly Disagree</option>
+    <br />
+    <p>Question 2<br>
+        _ _ _ _ _ _ _ _
+    </p>
+    <label>Ford is a good car company: </label>
+    <select id="q2">
+
+        <option></option>
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
     </select>
-<p>Question 4<br>
-    _ _ _ _ _ _ _ _ 
-   </p> 
-<label>Cybersecurity is good to major in: </label>
-<select id="q4">
-    
-    <option value="5">Strongly Agree</option>
-    <option value="4">Agree</option>
-    <option value="3">Neither Agree nor Disagree</option>
-    <option value="2">Disagree</option>
-    <option value="1">Strongly Disagree</option>
+    <p>Question 3<br>
+        _ _ _ _ _ _ _ _
+    </p>
+    <label>Country music is better then Pop music: </label>
+    <select id="q3">
+        <option></option>
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
     </select>
-<p>Question 5<br>
-    _ _ _ _ _ _ _ _ 
-   </p> 
-   <label>Luis Robert is better then Mike Trout: </label>
-<select id="q5">
-    
-    <option value="5">Strongly Agree</option>
-    <option value="4">Agree</option>
-    <option value="3">Neither Agree nor Disagree</option>
-    <option value="2">Disagree</option>
-    <option value="1">Strongly Disagree</option>
+    <p>Question 4<br>
+        _ _ _ _ _ _ _ _
+    </p>
+    <label>Cybersecurity is good to major in: </label>
+    <select id="q4">
+        <option></option>
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
     </select>
-   
-
-<br /><br  />
-<button onclick="calculateCompatibility()">Calculate Compatibility</button>
-<button onclick="resetPage()">Reset Page</button>
-
-
-<p id="compatibility"></p>
-<p id="comp"></p>
-
-
-<script>
-console.log("Starting Matchmaker Lite");
-
-function resetPage() {
-   location.reload();
-
-}
-
-function calculateCompatibility() {
-     console.log("calculateCompatibility");
-
-const DESIRED_RESPONSE = [
-        1, /* Strongly Disagree */
-        1, /* Strongly Disagree */
-        3, /* neither agree or disagree */
-        5, /* Strongly agree */
-        1 /*  Strongly Disagree */
-]
-
-const MAX_SCORE = 25;
-
-// Get the current values of the dropdown controls.
-let question1Response = document.getElementById("q1").selectedOptions[0].value;
-let question2Response = document.getElementById("q2").selectedOptions[0].value;
-let question3Response = document.getElementById("q3").selectedOptions[0].value;
-let question4Response = document.getElementById("q4").selectedOptions[0].value;
-let question5Response = document.getElementById("q5").selectedOptions[0].value;
-
-// Optionally log the values associated with question 1 through 5 to console
-console.log("Question 1 Answers:")
-console.log(document.getElementById("q1").selectedOptions[0].text);
-console.log(document.getElementById("q1").selectedOptions[0].value);
-//console.log(question1Response);
-
-console.log("Question 2 Answers:");
-console.log(document.getElementById("q2").selectedOptions[0].text);
-console.log(document.getElementById("q2").selectedOptions[0].value);
-//console.log(question2Response);
-
-console.log("Question 3 Answers:");
-console.log(document.getElementById("q3").selectedOptions[0].text);
-console.log(document.getElementById("q3").selectedOptions[0].value);
-//console.log(question1Response);
-
-console.log("Question 4 Answers:");
-console.log(document.getElementById("q4").selectedOptions[0].text);
-console.log(document.getElementById("q4").selectedOptions[0].value);
-//console.log(question2Response);
-
-console.log("Question 5 Answers:");
-console.log(document.getElementById("q5").selectedOptions[0].text);
-console.log(document.getElementById("q5").selectedOptions[0].value);
-//console.log(question2Response);
+    <p>Question 5<br>
+        _ _ _ _ _ _ _ _
+    </p>
+    <label>Luis Robert is better then Mike Trout: </label>
+    <select id="q5">
+        <option></option>
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
 
 
-// Calc compat scores
-let question1Compatiability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
-let question2Compatiability = 5 - Math.abs(question2Response - DESIRED_RESPONSE[1]);
-let question3Compatiability = 5 - Math.abs(question3Response - DESIRED_RESPONSE[2]);
-let question4Compatiability = 5 - Math.abs(question4Response - DESIRED_RESPONSE[3]);
-let question5Compatiability = 5 - Math.abs(question5Response - DESIRED_RESPONSE[4]);
-
-// log results to console
-console.log("c1="+question1Compatiability);
-console.log("c2="+question2Compatiability);
-console.log("c3="+question3Compatiability);
-console.log("c4="+question4Compatiability);
-console.log("c5="+question5Compatiability);
-
-//calc total compatibility
-let totalCompatiability = question1Compatiability + question2Compatiability + question3Compatiability + question4Compatiability + question5Compatiability;
+    <br /><br />
+    <button onclick="calculateCompatibility()">Calculate Compatibility</button>
+    <button onclick="resetPage()">Reset Page</button>
 
 
-// convert totalComp to a percentage
-totalCompatiability *= 100 / MAX_SCORE;
-totalCompatiability = Math.round(totalCompatiability);
+    <p id="compatibility"></p>
+    <p id="comp"></p>
+    <p><br><b>Here is a summary of the Compatibility Scores entered:</b></p>
+    <p id="comp1"></p>
+    <p id="comp2"></p>
+    <p id="comp3"></p>
+    <p id="comp4"></p>
+    <p id="comp5"></p>
 
-console.log("tc="+ totalCompatiability);
+    <script>
+        console.log("Starting Matchmaker Lite");
 
-document.getElementById("compatibility").innerHTML = "Your compatibility score is "+totalCompatiability + "%";
+        function resetPage() {
+            location.reload();
+
+        }
+
+        function calculateCompatibility() {
+            console.log("calculateCompatibility");
+
+            // REQ 4.1 Utilities constants 
+            const DESIRED_RESPONSE = [
+                1, /* Strongly Disagree */
+                1, /* Strongly Disagree */
+                3, /* neither agree or disagree */
+                5, /* Strongly agree */
+                1 /*  Strongly Disagree */
+            ]
+
+            const MAX_SCORE = 25;
+
+            //validate that all options were selected and no blanks
+            if (validate() === true) {
+
+                // Get the current values of the dropdown controls.
+                let question1Response = document.getElementById("q1").selectedOptions[0].value;
+                let question2Response = document.getElementById("q2").selectedOptions[0].value;
+                let question3Response = document.getElementById("q3").selectedOptions[0].value;
+                let question4Response = document.getElementById("q4").selectedOptions[0].value;
+                let question5Response = document.getElementById("q5").selectedOptions[0].value;
+
+                // Optionally log the values associated with question 1 through 5 to console
+                console.log("Question 1 Answers:")
+                console.log(document.getElementById("q1").selectedOptions[0].text);
+                console.log(document.getElementById("q1").selectedOptions[0].value);
+                //console.log(question1Response);
+
+                console.log("Question 2 Answers:");
+                console.log(document.getElementById("q2").selectedOptions[0].text);
+                console.log(document.getElementById("q2").selectedOptions[0].value);
+                //console.log(question2Response);
+
+                console.log("Question 3 Answers:");
+                console.log(document.getElementById("q3").selectedOptions[0].text);
+                console.log(document.getElementById("q3").selectedOptions[0].value);
+                //console.log(question1Response);
+
+                console.log("Question 4 Answers:");
+                console.log(document.getElementById("q4").selectedOptions[0].text);
+                console.log(document.getElementById("q4").selectedOptions[0].value);
+                //console.log(question2Response);
+
+                console.log("Question 5 Answers:");
+                console.log(document.getElementById("q5").selectedOptions[0].text);
+                console.log(document.getElementById("q5").selectedOptions[0].value);
+                //console.log(question2Response);
 
 
-// REQ 3. Display closing remark based on identified threshold score
+                // REQ 2.2 Calc compat scores
+                let question1Compatiability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
+                let question2Compatiability = 5 - Math.abs(question2Response - DESIRED_RESPONSE[1]);
+                let question3Compatiability = 5 - Math.abs(question3Response - DESIRED_RESPONSE[2]);
+                let question4Compatiability = 5 - Math.abs(question4Response - DESIRED_RESPONSE[3]);
+                let question5Compatiability = 5 - Math.abs(question5Response - DESIRED_RESPONSE[4]);
+
+                // log results to console
+                console.log("c1=" + question1Compatiability);
+                console.log("c2=" + question2Compatiability);
+                console.log("c3=" + question3Compatiability);
+                console.log("c4=" + question4Compatiability);
+                console.log("c5=" + question5Compatiability);
+
+                // REQ 2.3 calc total compatibility
+                let totalCompatiability = question1Compatiability + question2Compatiability + question3Compatiability + question4Compatiability + question5Compatiability;
+
+                // convert totalComp to a percentage
+                totalCompatiability *= 100 / MAX_SCORE;
+                totalCompatiability = Math.round(totalCompatiability);
+
+                console.log("tc=" + totalCompatiability);
+
+                // REQ 3.1 Display summary of each question compatiability score
+                document.getElementById("comp1").innerHTML = "Question 1 compatibility score is " + question1Compatiability;
+                document.getElementById("comp2").innerHTML = "Question 2 compatibility score is " + question2Compatiability;
+                document.getElementById("comp3").innerHTML = "Question 3 compatibility score is " + question3Compatiability;
+                document.getElementById("comp4").innerHTML = "Question 4 compatibility score is " + question4Compatiability;
+                document.getElementById("comp5").innerHTML = "Question 5 compatibility score is " + question5Compatiability;
+
+                // REQ 3.2 display total compatiability as percentage
+                document.getElementById("compatibility").innerHTML = "Your compatibility score is " + totalCompatiability + "%";
 
 
+                // REQ 3.3 Display closing remark based on identified threshold score
 
-if (totalCompatiability > 99) {
-  var matchScore = "Perfect Match!!!, true love";
-  console.log("matchscore="+ matchScore);
-} 
-else if (totalCompatiability >= 75 && totalCompatiability <100) {
-    var matchScore = "an Above Average match!!, friends maybe more";
-    console.log("matchscore="+ matchScore);
-}
-else if (totalCompatiability >= 50 && totalCompatiability <= 75) {
-    var matchScore = "an Ok match :), friends";
-    console.log("matchscore="+ matchScore);
-}
-else if (totalCompatiability >= 25 && totalCompatiability <= 50) {
-    var matchScore = "a Poor match :( friends";
-    console.log("matchscore="+ matchScore);
-}
-else if (totalCompatiability >= 0 && totalCompatiability <= 25) {
-    var matchScore = "an Awful match, run away";
-    console.log("matchscore="+ matchScore);
-}
-else {
-    var matchScore = "an unfound match or error"
-    console.log("matchscore="+ matchScore);
-}
+                if (totalCompatiability > 99) {
+                    var matchScore = "Perfect Match!!!, true love";
+                    console.log("matchscore=" + matchScore);
+                }
+                else if (totalCompatiability >= 75 && totalCompatiability < 100) {
+                    var matchScore = "an Above Average match!!, friends maybe more";
+                    console.log("matchscore=" + matchScore);
+                }
+                else if (totalCompatiability >= 50 && totalCompatiability <= 75) {
+                    var matchScore = "an Ok match :), friends";
+                    console.log("matchscore=" + matchScore);
+                }
+                else if (totalCompatiability >= 25 && totalCompatiability <= 50) {
+                    var matchScore = "a Poor match :( friends";
+                    console.log("matchscore=" + matchScore);
+                }
+                else if (totalCompatiability >= 0 && totalCompatiability <= 25) {
+                    var matchScore = "an Awful match, run away";
+                    console.log("matchscore=" + matchScore);
+                }
+                else {
+                    var matchScore = "an unfound match or error"
+                    console.log("matchscore=" + matchScore);
+                }
 
-    document.getElementById("comp").innerHTML = "And we think this is <b>" + matchScore + "</b>...";
+                document.getElementById("comp").innerHTML = "And we think this is <b>" + matchScore + "</b>...";
+            }
 
-}
-</script>
+            else {
+
+                // display an alert error message to fix an entry that is blank
+                alert("One of your selections is blank, please select an answer");
+            }
+        }
+
+
+        // REQ 3.4 and 4.2 validate function - check if each of the drop down options have a value
+        function validate() {
+
+            // get each value on the page
+            let question1Response = document.getElementById("q1").selectedOptions[0].value;
+            let question2Response = document.getElementById("q2").selectedOptions[0].value;
+            let question3Response = document.getElementById("q3").selectedOptions[0].value;
+            let question4Response = document.getElementById("q4").selectedOptions[0].value;
+            let question5Response = document.getElementById("q5").selectedOptions[0].value;
+
+             // if a question was not answered return a false
+            var validated=true;
+            if(question1Response==="") validated=false;
+            if(question2Response==="") validated=false;
+            if(question3Response==="") validated=false;
+            if(question4Response==="") validated=false;
+            if(question5Response==="") validated=false;
+            return validated;
+        }
+
+    </script>
 
 </body>
+
 </html>
